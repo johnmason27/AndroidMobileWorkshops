@@ -7,4 +7,15 @@
     <string name="date_picker_title">Date of crime:</string>
     <string name="new_crime">New Crime</string>
     <string name="delete_crime_button_text">Delete Crime</string>
+    <string name="crime_suspect_text">Choose Suspect</string>
+    <string name="crime_report_text">Send Crime Report</string>
+    <string name="crime_report">%1$s!
+        The crime was discovered on %2s. %3s, and %4s </string>
+    <string name="crime_report_solved">The case is solved</string>
+    <string name="crime_report_unsolved">The case is not solved</string>
+    <string name="crime_report_no_suspect">there is no suspect.</string>
+    <string name="crime_report_suspect">the suspect is %s.</string>
+    <string name="crime_report_subject">CriminalIntent Crime Report</string>
+    <string name="send_report">Send crime report via</string>
+    <string name="send_report_phone_text">Report via phone</string>
 </resources>
