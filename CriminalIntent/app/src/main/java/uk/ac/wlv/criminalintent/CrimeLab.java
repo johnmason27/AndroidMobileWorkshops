@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,6 +19,11 @@ public class CrimeLab {
     private static CrimeLab crimeLab;
     private Context context;
     private static SQLiteDatabase database;
+
+    public File getPhotoFile(Crime crime) {
+        File filesDir = this.context.getFilesDir();
+        return new File(filesDir, crime.getPhotoFilename());
+    }
 
     public static CrimeLab get(Context context) {
         if (crimeLab == null) {

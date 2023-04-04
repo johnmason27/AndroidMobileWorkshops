@@ -27,6 +27,15 @@
             android:parentActivityName=".CrimeListActivity"
             android:label="@string/app_name">
         </activity>
+        <provider
+            android:authorities="uk.ac.wlv.criminalintent.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files" />
+        </provider>
     </application>
 
 </manifest>
